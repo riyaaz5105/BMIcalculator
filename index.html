@@ -1,0 +1,95 @@
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="projectcss.css" />
+</head>
+<body>
+  
+  <div class="container">
+      <div class="section">
+        <div class="intro">
+          <div class="intro-text">
+            <h1>BMI Calculator</h1>
+            <p>Better understand your weight in relation to your height using our body mass index (BMI) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.</p>
+          </div>
+      
+          <div class="bmi-box">
+            <h3>Enter details</h3>
+              <div class="unit-toggle">
+                <label><input type="radio" name="unit" value="metric" checked> Metric</label>
+                <label><input type="radio" name="unit" value="imperial"> Imperial</label>
+              </div>
+              <div class="input-group" id="metric-inputs" style="display:flex">
+                <input id="height-m" type="number" placeholder="Enter Height in cm"> <span>cm</span>
+          <input id="weight-m" type="number" placeholder="Enter Weight in kgs"> <span>kg</span>
+        </div>
+        <div class="input-group" id="imperial-inputs" style="display: none;">
+          <input id="height-ft" type="number" placeholder="Enter how many feets"><span>ft</span>
+          <input id="height-in" type="number" placeholder="Enter how many inches"><span>in</span>
+          <input id="weight-i" type="number" placeholder="Enter Weight in lbs"><span>lbs</span>
+        </div>
+          <button class="btn" onclick="calculateBMI()">Submit</button>
+          <button class="btn" onclick="resetInput()">Reset</button>
+        <div class="bmi-result" id="result"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="intro">
+        <div>
+          <h2>What your BMI result means</h2>
+          <br>
+          <div class="card">
+            <p>A BMI range of 18.5 to 24.9 is considered a "healthy weight." Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating whole fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Healthy Habits</h2>
+      
+      <div class="cards">
+        <div class="card">
+          <h1>🍴</h1>
+          <p>Healthy eating promotes weight control, disease prevention, better digestion, immunity, mental clarity, and mood.</p>
+        </div>
+        <br>
+        <div class="card">
+          <h1>🏋️🏋🏻‍♂️</h1>
+          <p>Exercise improves fitness, aids weight control, helps mood, and reduces disease risk while fostering fitness and longevity.</p>
+        </div>
+        <br>
+        <div class="card">
+          <h1>😴</h1>
+          <p>Sleep enhances mental clarity, emotional stability, and physical energy, promoting overall restoration and rejuvenation.</p>
+        </div>
+      </div>
+     
+    </div>
+
+    <div class="section">
+      <h2>Limitations of BMI</h2>
+      <p>Although BMI is often a practical indicator of healthy weight , it is not suited for every person . Specific Groups should carefully consider the BMI outcomes,and in certain cases ,the measurement may not be benificial to use</p>
+      <div class="cards">
+        <div class="card">
+          <h1>♂️♀️</h1>
+          <p>The development and body fat composition of girls and boys vary with age. Consequently, a child's age and gender are considered when evaluating their BMI.</p>
+        </div>
+        <br>
+        <div class="card">
+          <h1>🎂</h1>
+          <p>In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.</p>
+        </div>
+        <br>
+        <div class="card">
+          <h1>💪🏻</h1>
+          <p>BMI may misclassify muscular individuals as overweight or obese, as it doesn’t differentiate muscle from fat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="projectjs.js"></script>
+</body>
+</html>
